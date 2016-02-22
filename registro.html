@@ -1,0 +1,150 @@
+<html>
+	<head>
+		<title>MiBINGO</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <script src="jquery-1.11.2.min.js"></script>
+    <script src="registro.js"></script>
+	</head>
+	<body>
+    <div id="contenedor2">
+		<div id="logo_index">
+			<img src="imagenes/bingo.jpg">
+		</div>
+		<div id="form_registro">
+        	<form method="post">
+				<table style="width:300px;margin-left:auto;margin-right:auto;">
+					<tr>
+						<td class="celda_label"><label for='login'>Login</label></td>
+						<td class="celda_input"><input type='text' name='login' id='login'></td>
+                        <td class="celda_label" id="error_login1"></td>
+					</tr>
+					<tr>
+						<td class="celda_label"><label for='password1'>Contraseña</label></td>
+						<td class="celda_input"><input type='password' name='password1' id='password1'></td>
+                        <td class="celda_label" id="error_password1"></td>
+					</tr>
+					<tr>
+						<td class="celda_label"><label for='password2'>Repetir Contraseña</label></td>
+						<td class="celda_input"><input type='password' name='password2' id='password2'></td>
+                        <td class="celda_label" id="error_password2"></td>
+					</tr>
+					<tr>
+						<td class="celda_label"><label for='nombre'>Nombre</label></td>
+						<td class="celda_input"><input type='text' name='nombre' id='nombre'></td>
+                        <td class="celda_label" id="error_nombre"></td>
+					</tr>
+					<tr>
+						<td class="celda_label"><label for='apellidos'>Apellidos</label></td>
+						<td class="celda_input"><input type='text' name='apellidos' id='apellidos'></td>
+                        <td class="celda_label" id="error_apellidos"></td>
+					</tr>
+					<tr>
+						<td class="celda_label"><label for='direccion'>Direccion</label></td>
+						<td class="celda_input"><input type='text' name='direccion' id='direccion'></td>
+                        <td class="celda_label" id="error_direccion"></td>
+					</tr>
+					<tr>
+						<td class="celda_label"><label for='cp'>CP</label></td>
+						<td class="celda_input"><input type='text' name='cp' id='cp'></td>
+                        <td class="celda_label" id="error_cp"></td>
+					</tr>
+					<tr>
+						<td class="celda_label"><label for='poblacion'>Poblacion</label></td>
+						<td class="celda_input"><input type='text' name='poblacion' id='poblacion'></td>
+                        <td class="celda_label" id="error_poblacion"></td>
+					</tr>
+					<tr>
+						<td class="celda_label"><label for='provincia'>Provincia</label></td>
+						<td class="celda_input"><input type='text' name='provincia' id='provincia'></td>
+                        <td class="celda_label" id="error_provincia"></td>
+					</tr>
+					<tr>
+						<td class="celda_label"><label for='telefono'>Telefono</label></td>
+						<td class="celda_input"><input type='text' name='telefono' id='telefono'></td>
+                        <td class="celda_label" id="error_telefono"></td>
+					</tr>
+					<tr>
+						<td class="celda_label"><label for='movil'>Movil</label></td>
+						<td class="celda_input"><input type='text' name='movil' id='movil'></td>
+                        <td class="celda_label" id="error_movil"></td>
+					</tr>
+					<tr>
+						<td class="celda_label"><label for='email'>E-Mail</label></td>
+						<td class="celda_input"><input type='text' name='email' id='email'></td>
+                        <td class="celda_label" id="error_email"></td>
+					</tr>
+					<tr>
+						<td class="celda_label"><label for='tarjetatipo'>Tarjeta Tipo</label></td>
+						<td class="celda_input">
+							<select name='tarjetatipo' id="tarjetatipo" style="width:100%;">
+                            	<option value='elige'>Elige tarjeta</option>
+								<option value='visa'>Visa</option>
+								<option value='mastercard'>Mastercard</option>
+								<option value='americanexpress'>American Express</option>
+							</select>
+						</td>
+                        <td class="celda_input" id="error_tarjetatipo"></td>
+					</tr>
+					<tr>
+						<td class="celda_label"><label for='tarjetatitular'>Titular</label></td>
+						<td class="celda_input"><input type='text' name='tarjetatitular' id='tarjetatitular'></td>
+                        <td class="celda_label" id="error_tarjetatitular"></td>
+					</tr>
+					<tr>
+						<td class="celda_label"><label for='tarjetanumero'>Numero</label></td>
+						<td class="celda_input"><input type='text' name='tarjetanumero' id='tarjetanumero'></td>
+                        <td class="celda_label" id="error_tarjetanumero"></td>
+					</tr>
+					<tr>
+						<td class="celda_label"><label for='tarjetacv'>CV</label></td>
+						<td class="celda_input"><input type='text' name='tarjetacv' id='tarjetacv'></td>
+                        <td class="celda_label" id="error_tarjetacv"></td>
+					</tr>
+                    <tr>
+                    	<td class="celda_label"><label for='tarjetafecha'>Caducidad Tarjeta</label></td>
+                        <td class="celda_input">
+                        	<select name="mes" id="mes">
+                            	<option>Elige mes</option>
+                            	<option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
+                                <option>06</option>
+                                <option>07</option>
+                                <option>08</option>
+                                <option>09</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                            <select name="ano" id="ano">
+                            	<option>Elige año</option>
+                            	<option>2015</option>
+                                <option>2016</option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                            </select>
+                        </td>
+                        <td class="celda_label" id="error_tarjetafecha"></td>
+                    </tr>
+                    <tr>
+						<td class="celda_label"><label for='cantidad'>Cantidad</label></td>
+						<td class="celda_input"><input type='text' name='cantidad' id='cantidad'></td>
+                        <td class="celda_label" id="error_cantidad"></td>
+					</tr>
+					<tr>
+						<td colspan='3'>
+							<input type='button' name='enviar' id='enviar' value='Enviar' style="width:94px;">
+							<input type='reset' name='borrar' id='borrar' value='Borrar' style="width:94px;">
+                            <input type="button" name="volver" id="volver" value="Volver" style="width:94px;">
+						</td>
+                        <td></td>
+					</tr>
+				</table>
+            </form>
+		</div>
+    </div>
+	</body>
+</html>

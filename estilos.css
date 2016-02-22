@@ -1,0 +1,52 @@
+body{
+	background-color: green;
+}
+#cabecera{
+	text-align: center;
+	color: white;
+}
+
+#contenedor {
+	width:600px;
+	height: 300px;
+	border: 2px solid white;
+	margin: 0 auto;
+	margin-top: 140px;
+}
+#contenedor2 {
+	width:900px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+#form_login {
+	border: 3px solid black;
+	width:400px;
+	background-color: white;
+	margin-left:auto;
+	margin-right:auto;
+}
+#form_registro {
+	width:900px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#error_login {
+	color:rgba(255,0,0,1);
+	font-size:1.2em;
+	text-align:center;
+}
+td{
+	height:25px;
+	width:300px;
+}
+label {
+	float:left;
+	padding:5px;
+	margin:5px;
+}
+input {
+	float:right;
+	padding:5px;
+	margin:5px;
+}
